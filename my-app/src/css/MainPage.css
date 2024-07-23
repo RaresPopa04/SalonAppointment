@@ -1,0 +1,396 @@
+.greetingSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    gap: 2rem;
+    padding: 10px 20px;
+}
+
+.slogan{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.author{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.greetingSection .description{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.greetingSection .buttons{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.greetingSection .buttons button{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.greetingSection .buttons button:hover{
+    background-color: var(--hover-color);
+}
+
+.greetingSection .right{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .coverImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.servicesSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+.servicesSection >.title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.services .title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.servicesList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid #f5f5f5;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.service:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.service .photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service .title{
+    font-size: 1.2rem;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+.aboutUs .title{
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+
+}
+
+.aboutUs .description{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.aboutUs .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+
+    padding: 10px 20px;
+}
+
+
+.aboutUs .container .right{
+    width: 30%;
+}
+
+.appointmentSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.appointmentSection .title{
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+
+
+.appointmentSection .form-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+
+.appointmentSection .form-section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.same-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.appointmentSection .form-section form input, .appointmentSection .form-section form select{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+input[type="submit"]{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    
+    margin-bottom: 40px;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--hover-color);
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.reviewList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.reviews .title{
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.review{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    width: 600px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+    border: 1px solid var(--primary-color);
+    overflow: hidden;
+}
+
+.review:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.review .photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .title{
+    font-size: 1.2rem;
+}
+
+.review .text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    word-wrap: break-word;
+    overflow: auto;
+    
+}
+
+.review .description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.review .description .name{
+    font-weight: 700;
+
+}
+
+.review .description .name{
+    font-weight: 700;
+
+}
+
+.greetingSection .coverImg{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.greetingSection .coverImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.review .text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.reviewForm textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.aboutUs .photo{
+    width: 350px;
+    object-fit: cover;
+}
+
+.aboutUs .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+

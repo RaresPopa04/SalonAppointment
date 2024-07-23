@@ -1,0 +1,36 @@
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}

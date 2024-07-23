@@ -1,0 +1,71 @@
+/* Footer.css */
+
+.footer {
+    background-color: var(--hover-color);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-text {
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-description >div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap:10px;
+}
+
+.footer-description .phone,
+.footer-description .email,
+.footer-description .address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.footer-description .phone .faPhoneAlt,
+.footer-description .email .faEnvelope,
+.footer-description .address .faMapMarkerAlt,
+.footer-description .phone .faClock,
+.footer-description .email .faClock,
+.footer-description .address .faClock,
+.footer-description .phone .faFacebook,
+.footer-description .email .faInstagram,
+.footer-description .address .faTwitter {
+    margin-right: 0.5rem;
+}
+
+.email-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    cursor: pointer;
+    color: #e4405f;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
